@@ -22,12 +22,12 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		
-		String patternNacimiento = "d 'de' MMMM 'de' yyyy";
-		LocalDateTime fechaHoy = LocalDateTime.now();
-		String patternFecha = "EEEE, "+patternNacimiento+" 'a las' HH:mm";
-		DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern(patternFecha, Locale.forLanguageTag("es-ES"));
-		System.out.println("Hoy es "+fechaHoy.format(formatoFecha)+"\n");
-		LocalDate fechaNacimiento = null;
+		String patternNacimiento = "d 'de' MMMM 'de' yyyy"; 
+		LocalDateTime fechaHoy = LocalDateTime.now(); 
+		String patternFecha = "EEEE, "+patternNacimiento+" 'a las' HH:mm"; 
+		DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern(patternFecha, Locale.forLanguageTag("es-ES")); 
+		System.out.println("Hoy es "+fechaHoy.format(formatoFecha)+"\n"); 
+		LocalDate fechaNacimiento = null; 
 		try (Scanner entradaEsc = new Scanner(System.in)) {
 			boolean validador= true;
 			while(validador) {
