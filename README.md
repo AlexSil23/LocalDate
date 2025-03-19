@@ -1,4 +1,4 @@
-# Práctica 4: Cumpleaños
+# Práctica: Cumpleaños
 
 Este programa Java calcula los días restantes hasta tu próximo cumpleaños.
 
